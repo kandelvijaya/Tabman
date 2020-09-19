@@ -21,8 +21,6 @@ class TabPageViewController: TabmanViewController {
         return parent as? GradientViewController
     }
     
-    private var activeBulletinManager: BLTNItemManager?
-    
     let bar = TMBar.ButtonBar()
     
     lazy var viewControllers: [UIViewController] = {
@@ -76,12 +74,6 @@ class TabPageViewController: TabmanViewController {
         bar.indicator.tintColor = tintColor
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        showBulletin(makeIntroBulletinManager())
-    }
-    
     // MARK: Actions
     
     @objc func nextPage(_ sender: UIBarButtonItem) {
@@ -96,15 +88,6 @@ class TabPageViewController: TabmanViewController {
         let index = viewControllers.count
         viewControllers.append(makeChildViewController())
         insertPage(at: index, then: .scrollToUpdate)
-    }
-    
-    // MARK: Bulletins
-    
-    func showBulletin(_ manager: BLTNItemManager?) {
-        if let manager = manager {
-            self.activeBulletinManager = manager
-            manager.showBulletin(above: self)
-        }
     }
     
     // MARK: View Controllers

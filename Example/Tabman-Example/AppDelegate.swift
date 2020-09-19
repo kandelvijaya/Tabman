@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Randient
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,10 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        // Only use dark gradients
-        Randient.addFilter(that: { !$0.metadata.isPredominantlyLight })
-        
         return true
     }
 

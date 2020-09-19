@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,28 +69,12 @@
                                             <outlet property="positionLabel" destination="6wE-cv-fvA" id="gnU-D9-Jmk"/>
                                         </connections>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYw-O7-Pmx" customClass="ActionButton" customModule="Tabman_Example" customModuleProvider="target">
-                                        <rect key="frame" x="207" y="0.0" width="120" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="z0O-1T-N5U"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                        <state key="normal" title="Settings"/>
-                                        <connections>
-                                            <action selector="settingsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qm0-pD-h0p"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="1Ah-A0-oEL" secondAttribute="bottom" id="0uX-gn-b9a"/>
                                     <constraint firstItem="1Ah-A0-oEL" firstAttribute="leading" secondItem="ZFH-7B-hz3" secondAttribute="leading" id="14s-zD-srB"/>
-                                    <constraint firstItem="JYw-O7-Pmx" firstAttribute="top" secondItem="ZFH-7B-hz3" secondAttribute="top" id="7pd-ab-9Pi"/>
                                     <constraint firstItem="1Ah-A0-oEL" firstAttribute="top" secondItem="ZFH-7B-hz3" secondAttribute="top" id="GfS-RL-UyJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="JYw-O7-Pmx" secondAttribute="bottom" id="R0b-kl-SWP"/>
-                                    <constraint firstItem="JYw-O7-Pmx" firstAttribute="height" secondItem="1Ah-A0-oEL" secondAttribute="height" id="VNo-QG-om7"/>
-                                    <constraint firstItem="JYw-O7-Pmx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Ah-A0-oEL" secondAttribute="trailing" constant="8" id="iUk-ue-yqC"/>
-                                    <constraint firstAttribute="trailing" secondItem="JYw-O7-Pmx" secondAttribute="trailing" id="ruj-g0-ebm"/>
                                 </constraints>
                             </view>
                         </subviews>

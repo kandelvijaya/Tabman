@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Randient
 
 class GradientViewController: UIViewController {
     
@@ -43,7 +42,8 @@ class GradientViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        gradientView.setGradient(.amin, animated: false)
+        gradientView.setColors([UIColor(red: 0.56, green: 0.18, blue: 0.89, alpha: 1.00),
+                                UIColor(red: 0.29, green: 0.00, blue: 0.88, alpha: 1.00)], animated: false, completion: nil)
         
         gradientView.startPoint = Defaults.startPoint
         gradientView.endPoint = Defaults.endPoint
