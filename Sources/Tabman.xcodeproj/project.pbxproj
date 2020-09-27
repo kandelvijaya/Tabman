@@ -75,6 +75,9 @@
 		46F1C50B2520991300889DE2 /* TMBarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C92520991300889DE2 /* TMBarBackgroundView.swift */; };
 		46F1C50C2520991300889DE2 /* BarMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4CB2520991300889DE2 /* BarMath.swift */; };
 		46F1C50D2520991300889DE2 /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4CC2520991300889DE2 /* WeakContainer.swift */; };
+		46F1C526252099C300889DE2 /* TabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4702520990A00889DE2 /* TabmanViewController.swift */; };
+		46F1C52D25209ABA00889DE2 /* TabmanViewController+Insets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C46F2520990A00889DE2 /* TabmanViewController+Insets.swift */; };
+		46F1C53025209AC000889DE2 /* UIViewController+Tabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4762520991300889DE2 /* UIViewController+Tabman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -587,6 +590,7 @@
 				46F1C4D12520991300889DE2 /* InsetExecutor.swift in Sources */,
 				46F1C4D52520991300889DE2 /* InsetCalculator.swift in Sources */,
 				46F1C5062520991300889DE2 /* TMBarButtonInteractionController.swift in Sources */,
+				46F1C526252099C300889DE2 /* TabmanViewController.swift in Sources */,
 				46F1C4F92520991300889DE2 /* TMBlockBarIndicator.swift in Sources */,
 				46F1C5072520991300889DE2 /* EdgeFadedView.swift in Sources */,
 				46F1C5082520991300889DE2 /* AnimateableLabel.swift in Sources */,
@@ -625,6 +629,7 @@
 				46F1C4F52520991300889DE2 /* TMDotBarIndicator.swift in Sources */,
 				46F1C4EB2520991300889DE2 /* TMHorizontalBarLayout+Separator.swift in Sources */,
 				46F1C4DE2520991300889DE2 /* TMHidingBar.swift in Sources */,
+				46F1C52D25209ABA00889DE2 /* TabmanViewController+Insets.swift in Sources */,
 				46F1C4D92520991300889DE2 /* AutoInsetter.swift in Sources */,
 				46F1C50D2520991300889DE2 /* WeakContainer.swift in Sources */,
 				46F1C4E12520991300889DE2 /* TMBarViewUpdateHandler.swift in Sources */,
@@ -634,6 +639,7 @@
 				46F1C4F72520991300889DE2 /* TMBarIndicator+None.swift in Sources */,
 				46F1C5022520991300889DE2 /* TMBarButtonController.swift in Sources */,
 				46F1C4F12520991300889DE2 /* TMBar.swift in Sources */,
+				46F1C53025209AC000889DE2 /* UIViewController+Tabman.swift in Sources */,
 				46F1C4E72520991300889DE2 /* TMBarItem.swift in Sources */,
 				46F1C4FF2520991300889DE2 /* TMTabItemBarButton.swift in Sources */,
 				46F1C4E92520991300889DE2 /* TMBar+Templates.swift in Sources */,
