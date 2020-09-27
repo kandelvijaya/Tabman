@@ -33,10 +33,11 @@ open class TabmanViewController: UIViewController, PageboyViewControllerDelegate
 
     public typealias PageIndex = PageboyViewController.PageIndex
     public typealias NavigationDirection = PageboyViewController.NavigationDirection
+    public typealias PageUpdateBehavior = PageboyViewController.PageUpdateBehavior
     
     // MARK: Views
 
-    private let pageViewController = PageboyViewController()
+    internal let pageViewController = PageboyViewController()
     
     internal let topBarContainer = UIStackView()
     internal let bottomBarContainer = UIStackView()
@@ -134,6 +135,46 @@ open class TabmanViewController: UIViewController, PageboyViewControllerDelegate
 
     // MARK: Paging
     
+    /// Whether scroll is enabled on the page view controller.
+    ///
+    /// Default is TRUE.
+    open var isScrollEnabled: Bool {
+        get {
+            pageViewController.isScrollEnabled
+        }
+        set {
+            pageViewController.isScrollEnabled = newValue
+        }
+    }
+    /// Whether the page view controller should infinitely scroll at the end of page ranges.
+    ///
+    /// Default is FALSE.
+    open var isInfiniteScrollEnabled: Bool {
+        get {
+            pageViewController.isInfiniteScrollEnabled
+        }
+        set {
+            pageViewController.isInfiniteScrollEnabled = newValue
+        }
+    }
+    
+    /// The number of pages in the page view controller.
+    open var numberOfPages: Int {
+        pageViewController.pageCount ?? 0
+    }
+    /// The page index that the page view controller is currently at.
+    open var currentPageIndex: Int? {
+        pageViewController.currentIndex
+    }
+    /// The relative page position that the page view controller is currently at.
+    open var currentPagePosition: CGPoint? {
+        pageViewController.currentPosition
+    }
+    /// The view controller that the page view controller is currently at.
+    open var currentViewController: UIViewController? {
+        pageViewController.currentViewController
+    }
+    
     private func embedPageViewController() {
         addChild(pageViewController)
         view.addSubview(pageViewController.view)
@@ -145,21 +186,29 @@ open class TabmanViewController: UIViewController, PageboyViewControllerDelegate
             view.bottomAnchor.constraint(equalTo: pageViewController.view.bottomAnchor)
         ])
     }
-
-    /// :nodoc:
-//    open override func insertPage(at index: PageIndex,
-//                                  then updateBehavior: PageboyViewController.PageUpdateBehavior) {
-//        bars.forEach({ $0.reloadData(at: index...index, context: .insertion) })
-//        super.insertPage(at: index, then: updateBehavior)
-//    }
-
-    /// :nodoc:
-//    open override func deletePage(at index: PageIndex,
-//                                  then updateBehavior: PageboyViewController.PageUpdateBehavior) {
-//        bars.forEach({ $0.reloadData(at: index...index, context: .deletion) })
-//        super.deletePage(at: index, then: updateBehavior)
-//    }
-
+    
+    /// Insert a new page into the page view controller.
+    ///
+    /// - Parameters:
+    ///   - index: The index to insert the page at.
+    ///   - updateBehavior: Behavior to execute after the page was inserted.
+    open func insertPage(at index: PageIndex,
+                    then updateBehavior: PageUpdateBehavior = .scrollToUpdate) {
+        bars.forEach({ $0.reloadData(at: index...index, context: .insertion) })
+        pageViewController.insertPage(at: index, then: updateBehavior)
+    }
+    
+    /// Delete an existing page from the page view controller.
+    ///
+    /// - Parameters:
+    ///   - index: The index to delete the page from.
+    ///   - updateBehavior: Behavior to execute after the page was deleted.
+    open func deletePage(at index: PageIndex,
+                    then updateBehavior: PageUpdateBehavior = .doNothing) {
+        bars.forEach({ $0.reloadData(at: index...index, context: .deletion) })
+        pageViewController.deletePage(at: index, then: updateBehavior)
+    }
+    
     /// :nodoc:
     open func pageboyViewController(_ pageboyViewController: PageboyViewController,
                                     willScrollToPageAt index: PageIndex,
