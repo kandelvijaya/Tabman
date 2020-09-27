@@ -9,7 +9,7 @@ import UIKit
 import Tabman
 import Pageboy
 
-class ViewController: PageboyViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

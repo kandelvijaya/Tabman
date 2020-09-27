@@ -11,7 +11,70 @@
 		46F1C40E252095D400889DE2 /* TabmanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C40D252095D400889DE2 /* TabmanTests.swift */; };
 		46F1C410252095D400889DE2 /* Tabman.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F1C402252095D400889DE2 /* Tabman.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46F1C4462520964200889DE2 /* Pageboy in Frameworks */ = {isa = PBXBuildFile; productRef = 46F1C4452520964200889DE2 /* Pageboy */; };
-		46F1C44A2520966000889DE2 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4492520966000889DE2 /* Test.swift */; };
+		46F1C4CE2520991300889DE2 /* PageboyNavigationDirection+Tabman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4772520991300889DE2 /* PageboyNavigationDirection+Tabman.swift */; };
+		46F1C4CF2520991300889DE2 /* UIView+LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4782520991300889DE2 /* UIView+LayoutGuide.swift */; };
+		46F1C4D02520991300889DE2 /* PageboyViewController+RelativeCurrentPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4792520991300889DE2 /* PageboyViewController+RelativeCurrentPosition.swift */; };
+		46F1C4D12520991300889DE2 /* InsetExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C47C2520991300889DE2 /* InsetExecutor.swift */; };
+		46F1C4D22520991300889DE2 /* TableViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C47E2520991300889DE2 /* TableViewInsetCalculator.swift */; };
+		46F1C4D32520991300889DE2 /* ScrollViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C47F2520991300889DE2 /* ScrollViewInsetCalculator.swift */; };
+		46F1C4D42520991300889DE2 /* CollectionViewInsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4802520991300889DE2 /* CollectionViewInsetCalculator.swift */; };
+		46F1C4D52520991300889DE2 /* InsetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4812520991300889DE2 /* InsetCalculator.swift */; };
+		46F1C4D62520991300889DE2 /* InsetCalculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4822520991300889DE2 /* InsetCalculations.swift */; };
+		46F1C4D72520991300889DE2 /* DefaultInsetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4842520991300889DE2 /* DefaultInsetStore.swift */; };
+		46F1C4D82520991300889DE2 /* InsetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4852520991300889DE2 /* InsetStore.swift */; };
+		46F1C4D92520991300889DE2 /* AutoInsetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4862520991300889DE2 /* AutoInsetter.swift */; };
+		46F1C4DA2520991300889DE2 /* UIViewController+ScrollViewDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4882520991300889DE2 /* UIViewController+ScrollViewDetection.swift */; };
+		46F1C4DB2520991300889DE2 /* AutoInsetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4892520991300889DE2 /* AutoInsetSpec.swift */; };
+		46F1C4DC2520991300889DE2 /* TMAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C48B2520991300889DE2 /* TMAnimation.swift */; };
+		46F1C4DD2520991300889DE2 /* TMHidingBar+Triggers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C48E2520991300889DE2 /* TMHidingBar+Triggers.swift */; };
+		46F1C4DE2520991300889DE2 /* TMHidingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C48F2520991300889DE2 /* TMHidingBar.swift */; };
+		46F1C4DF2520991300889DE2 /* TMSystemBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4912520991300889DE2 /* TMSystemBar.swift */; };
+		46F1C4E02520991300889DE2 /* TMBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4932520991300889DE2 /* TMBarView.swift */; };
+		46F1C4E12520991300889DE2 /* TMBarViewUpdateHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4942520991300889DE2 /* TMBarViewUpdateHandler.swift */; };
+		46F1C4E22520991300889DE2 /* TMBarViewLayoutGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4952520991300889DE2 /* TMBarViewLayoutGrid.swift */; };
+		46F1C4E32520991300889DE2 /* TMBarViewFocusRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4962520991300889DE2 /* TMBarViewFocusRect.swift */; };
+		46F1C4E42520991300889DE2 /* TMBarViewScrollHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4972520991300889DE2 /* TMBarViewScrollHandler.swift */; };
+		46F1C4E52520991300889DE2 /* TMBarViewContentInsetGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4982520991300889DE2 /* TMBarViewContentInsetGuides.swift */; };
+		46F1C4E62520991300889DE2 /* TMBarViewFocusProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4992520991300889DE2 /* TMBarViewFocusProvider.swift */; };
+		46F1C4E72520991300889DE2 /* TMBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C49B2520991300889DE2 /* TMBarItem.swift */; };
+		46F1C4E82520991300889DE2 /* UIKit+TMBarItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C49C2520991300889DE2 /* UIKit+TMBarItemable.swift */; };
+		46F1C4E92520991300889DE2 /* TMBar+Templates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C49D2520991300889DE2 /* TMBar+Templates.swift */; };
+		46F1C4EA2520991300889DE2 /* TMHorizontalBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A02520991300889DE2 /* TMHorizontalBarLayout.swift */; };
+		46F1C4EB2520991300889DE2 /* TMHorizontalBarLayout+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A12520991300889DE2 /* TMHorizontalBarLayout+Separator.swift */; };
+		46F1C4EC2520991300889DE2 /* TMBarLayout+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A22520991300889DE2 /* TMBarLayout+None.swift */; };
+		46F1C4ED2520991300889DE2 /* TMConstrainedHorizontalBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A32520991300889DE2 /* TMConstrainedHorizontalBarLayout.swift */; };
+		46F1C4EE2520991300889DE2 /* TMBarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A42520991300889DE2 /* TMBarLayout.swift */; };
+		46F1C4EF2520991300889DE2 /* TMBarLayoutInsetGuides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A52520991300889DE2 /* TMBarLayoutInsetGuides.swift */; };
+		46F1C4F02520991300889DE2 /* TMBarLayoutParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A62520991300889DE2 /* TMBarLayoutParent.swift */; };
+		46F1C4F12520991300889DE2 /* TMBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A72520991300889DE2 /* TMBar.swift */; };
+		46F1C4F22520991300889DE2 /* CGRect+Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4A92520991300889DE2 /* CGRect+Interpolation.swift */; };
+		46F1C4F32520991300889DE2 /* UIColor+Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4AA2520991300889DE2 /* UIColor+Interpolation.swift */; };
+		46F1C4F42520991300889DE2 /* UIView+DefaultTintColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4AB2520991300889DE2 /* UIView+DefaultTintColor.swift */; };
+		46F1C4F52520991300889DE2 /* TMDotBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4AE2520991300889DE2 /* TMDotBarIndicator.swift */; };
+		46F1C4F62520991300889DE2 /* TMChevronBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4AF2520991300889DE2 /* TMChevronBarIndicator.swift */; };
+		46F1C4F72520991300889DE2 /* TMBarIndicator+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B02520991300889DE2 /* TMBarIndicator+None.swift */; };
+		46F1C4F82520991300889DE2 /* TMLineBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B12520991300889DE2 /* TMLineBarIndicator.swift */; };
+		46F1C4F92520991300889DE2 /* TMBlockBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B22520991300889DE2 /* TMBlockBarIndicator.swift */; };
+		46F1C4FA2520991300889DE2 /* TMBarIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B32520991300889DE2 /* TMBarIndicator.swift */; };
+		46F1C4FB2520991300889DE2 /* TMBarIndicatorContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B42520991300889DE2 /* TMBarIndicatorContainer.swift */; };
+		46F1C4FC2520991300889DE2 /* TMBarIndicatorLayoutHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B52520991300889DE2 /* TMBarIndicatorLayoutHandler.swift */; };
+		46F1C4FD2520991300889DE2 /* TMTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B62520991300889DE2 /* TMTransition.swift */; };
+		46F1C4FE2520991300889DE2 /* TMBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4B82520991300889DE2 /* TMBarButton.swift */; };
+		46F1C4FF2520991300889DE2 /* TMTabItemBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4BA2520991300889DE2 /* TMTabItemBarButton.swift */; };
+		46F1C5002520991300889DE2 /* TMLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4BB2520991300889DE2 /* TMLabelBarButton.swift */; };
+		46F1C5012520991300889DE2 /* TMBarButton+None.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4BC2520991300889DE2 /* TMBarButton+None.swift */; };
+		46F1C5022520991300889DE2 /* TMBarButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4BD2520991300889DE2 /* TMBarButtonController.swift */; };
+		46F1C5032520991300889DE2 /* TMBarButtonCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4BE2520991300889DE2 /* TMBarButtonCollection.swift */; };
+		46F1C5042520991300889DE2 /* TMBarButtonStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4BF2520991300889DE2 /* TMBarButtonStateController.swift */; };
+		46F1C5052520991300889DE2 /* TMBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C12520991300889DE2 /* TMBadgeView.swift */; };
+		46F1C5062520991300889DE2 /* TMBarButtonInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C22520991300889DE2 /* TMBarButtonInteractionController.swift */; };
+		46F1C5072520991300889DE2 /* EdgeFadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C42520991300889DE2 /* EdgeFadedView.swift */; };
+		46F1C5082520991300889DE2 /* AnimateableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C52520991300889DE2 /* AnimateableLabel.swift */; };
+		46F1C5092520991300889DE2 /* ViewTitleViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C62520991300889DE2 /* ViewTitleViewContainer.swift */; };
+		46F1C50A2520991300889DE2 /* GestureScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C72520991300889DE2 /* GestureScrollView.swift */; };
+		46F1C50B2520991300889DE2 /* TMBarBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4C92520991300889DE2 /* TMBarBackgroundView.swift */; };
+		46F1C50C2520991300889DE2 /* BarMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4CB2520991300889DE2 /* BarMath.swift */; };
+		46F1C50D2520991300889DE2 /* WeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C4CC2520991300889DE2 /* WeakContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +94,74 @@
 		46F1C408252095D400889DE2 /* TabmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F1C40D252095D400889DE2 /* TabmanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabmanTests.swift; sourceTree = "<group>"; };
 		46F1C40F252095D400889DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		46F1C4492520966000889DE2 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		46F1C4562520975100889DE2 /* Tabman.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Tabman.xcconfig; path = ../Tabman.xcconfig; sourceTree = "<group>"; };
+		46F1C46F2520990A00889DE2 /* TabmanViewController+Insets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TabmanViewController+Insets.swift"; sourceTree = "<group>"; };
+		46F1C4702520990A00889DE2 /* TabmanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabmanViewController.swift; sourceTree = "<group>"; };
+		46F1C4762520991300889DE2 /* UIViewController+Tabman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Tabman.swift"; sourceTree = "<group>"; };
+		46F1C4772520991300889DE2 /* PageboyNavigationDirection+Tabman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PageboyNavigationDirection+Tabman.swift"; sourceTree = "<group>"; };
+		46F1C4782520991300889DE2 /* UIView+LayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutGuide.swift"; sourceTree = "<group>"; };
+		46F1C4792520991300889DE2 /* PageboyViewController+RelativeCurrentPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PageboyViewController+RelativeCurrentPosition.swift"; sourceTree = "<group>"; };
+		46F1C47C2520991300889DE2 /* InsetExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetExecutor.swift; sourceTree = "<group>"; };
+		46F1C47E2520991300889DE2 /* TableViewInsetCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewInsetCalculator.swift; sourceTree = "<group>"; };
+		46F1C47F2520991300889DE2 /* ScrollViewInsetCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewInsetCalculator.swift; sourceTree = "<group>"; };
+		46F1C4802520991300889DE2 /* CollectionViewInsetCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewInsetCalculator.swift; sourceTree = "<group>"; };
+		46F1C4812520991300889DE2 /* InsetCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetCalculator.swift; sourceTree = "<group>"; };
+		46F1C4822520991300889DE2 /* InsetCalculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetCalculations.swift; sourceTree = "<group>"; };
+		46F1C4842520991300889DE2 /* DefaultInsetStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultInsetStore.swift; sourceTree = "<group>"; };
+		46F1C4852520991300889DE2 /* InsetStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetStore.swift; sourceTree = "<group>"; };
+		46F1C4862520991300889DE2 /* AutoInsetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoInsetter.swift; sourceTree = "<group>"; };
+		46F1C4882520991300889DE2 /* UIViewController+ScrollViewDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ScrollViewDetection.swift"; sourceTree = "<group>"; };
+		46F1C4892520991300889DE2 /* AutoInsetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoInsetSpec.swift; sourceTree = "<group>"; };
+		46F1C48B2520991300889DE2 /* TMAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMAnimation.swift; sourceTree = "<group>"; };
+		46F1C48E2520991300889DE2 /* TMHidingBar+Triggers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMHidingBar+Triggers.swift"; sourceTree = "<group>"; };
+		46F1C48F2520991300889DE2 /* TMHidingBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMHidingBar.swift; sourceTree = "<group>"; };
+		46F1C4912520991300889DE2 /* TMSystemBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMSystemBar.swift; sourceTree = "<group>"; };
+		46F1C4932520991300889DE2 /* TMBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarView.swift; sourceTree = "<group>"; };
+		46F1C4942520991300889DE2 /* TMBarViewUpdateHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarViewUpdateHandler.swift; sourceTree = "<group>"; };
+		46F1C4952520991300889DE2 /* TMBarViewLayoutGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarViewLayoutGrid.swift; sourceTree = "<group>"; };
+		46F1C4962520991300889DE2 /* TMBarViewFocusRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarViewFocusRect.swift; sourceTree = "<group>"; };
+		46F1C4972520991300889DE2 /* TMBarViewScrollHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarViewScrollHandler.swift; sourceTree = "<group>"; };
+		46F1C4982520991300889DE2 /* TMBarViewContentInsetGuides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarViewContentInsetGuides.swift; sourceTree = "<group>"; };
+		46F1C4992520991300889DE2 /* TMBarViewFocusProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarViewFocusProvider.swift; sourceTree = "<group>"; };
+		46F1C49B2520991300889DE2 /* TMBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarItem.swift; sourceTree = "<group>"; };
+		46F1C49C2520991300889DE2 /* UIKit+TMBarItemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+TMBarItemable.swift"; sourceTree = "<group>"; };
+		46F1C49D2520991300889DE2 /* TMBar+Templates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMBar+Templates.swift"; sourceTree = "<group>"; };
+		46F1C4A02520991300889DE2 /* TMHorizontalBarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMHorizontalBarLayout.swift; sourceTree = "<group>"; };
+		46F1C4A12520991300889DE2 /* TMHorizontalBarLayout+Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMHorizontalBarLayout+Separator.swift"; sourceTree = "<group>"; };
+		46F1C4A22520991300889DE2 /* TMBarLayout+None.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMBarLayout+None.swift"; sourceTree = "<group>"; };
+		46F1C4A32520991300889DE2 /* TMConstrainedHorizontalBarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMConstrainedHorizontalBarLayout.swift; sourceTree = "<group>"; };
+		46F1C4A42520991300889DE2 /* TMBarLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarLayout.swift; sourceTree = "<group>"; };
+		46F1C4A52520991300889DE2 /* TMBarLayoutInsetGuides.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarLayoutInsetGuides.swift; sourceTree = "<group>"; };
+		46F1C4A62520991300889DE2 /* TMBarLayoutParent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarLayoutParent.swift; sourceTree = "<group>"; };
+		46F1C4A72520991300889DE2 /* TMBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBar.swift; sourceTree = "<group>"; };
+		46F1C4A92520991300889DE2 /* CGRect+Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Interpolation.swift"; sourceTree = "<group>"; };
+		46F1C4AA2520991300889DE2 /* UIColor+Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Interpolation.swift"; sourceTree = "<group>"; };
+		46F1C4AB2520991300889DE2 /* UIView+DefaultTintColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DefaultTintColor.swift"; sourceTree = "<group>"; };
+		46F1C4AE2520991300889DE2 /* TMDotBarIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDotBarIndicator.swift; sourceTree = "<group>"; };
+		46F1C4AF2520991300889DE2 /* TMChevronBarIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMChevronBarIndicator.swift; sourceTree = "<group>"; };
+		46F1C4B02520991300889DE2 /* TMBarIndicator+None.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMBarIndicator+None.swift"; sourceTree = "<group>"; };
+		46F1C4B12520991300889DE2 /* TMLineBarIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMLineBarIndicator.swift; sourceTree = "<group>"; };
+		46F1C4B22520991300889DE2 /* TMBlockBarIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBlockBarIndicator.swift; sourceTree = "<group>"; };
+		46F1C4B32520991300889DE2 /* TMBarIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarIndicator.swift; sourceTree = "<group>"; };
+		46F1C4B42520991300889DE2 /* TMBarIndicatorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarIndicatorContainer.swift; sourceTree = "<group>"; };
+		46F1C4B52520991300889DE2 /* TMBarIndicatorLayoutHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarIndicatorLayoutHandler.swift; sourceTree = "<group>"; };
+		46F1C4B62520991300889DE2 /* TMTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTransition.swift; sourceTree = "<group>"; };
+		46F1C4B82520991300889DE2 /* TMBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarButton.swift; sourceTree = "<group>"; };
+		46F1C4BA2520991300889DE2 /* TMTabItemBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTabItemBarButton.swift; sourceTree = "<group>"; };
+		46F1C4BB2520991300889DE2 /* TMLabelBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMLabelBarButton.swift; sourceTree = "<group>"; };
+		46F1C4BC2520991300889DE2 /* TMBarButton+None.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMBarButton+None.swift"; sourceTree = "<group>"; };
+		46F1C4BD2520991300889DE2 /* TMBarButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarButtonController.swift; sourceTree = "<group>"; };
+		46F1C4BE2520991300889DE2 /* TMBarButtonCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarButtonCollection.swift; sourceTree = "<group>"; };
+		46F1C4BF2520991300889DE2 /* TMBarButtonStateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarButtonStateController.swift; sourceTree = "<group>"; };
+		46F1C4C12520991300889DE2 /* TMBadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBadgeView.swift; sourceTree = "<group>"; };
+		46F1C4C22520991300889DE2 /* TMBarButtonInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarButtonInteractionController.swift; sourceTree = "<group>"; };
+		46F1C4C42520991300889DE2 /* EdgeFadedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeFadedView.swift; sourceTree = "<group>"; };
+		46F1C4C52520991300889DE2 /* AnimateableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateableLabel.swift; sourceTree = "<group>"; };
+		46F1C4C62520991300889DE2 /* ViewTitleViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTitleViewContainer.swift; sourceTree = "<group>"; };
+		46F1C4C72520991300889DE2 /* GestureScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureScrollView.swift; sourceTree = "<group>"; };
+		46F1C4C92520991300889DE2 /* TMBarBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMBarBackgroundView.swift; sourceTree = "<group>"; };
+		46F1C4CB2520991300889DE2 /* BarMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarMath.swift; sourceTree = "<group>"; };
+		46F1C4CC2520991300889DE2 /* WeakContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +207,12 @@
 			isa = PBXGroup;
 			children = (
 				46F1C402252095D400889DE2 /* Tabman.h */,
-				46F1C4492520966000889DE2 /* Test.swift */,
+				46F1C4702520990A00889DE2 /* TabmanViewController.swift */,
+				46F1C46F2520990A00889DE2 /* TabmanViewController+Insets.swift */,
+				46F1C48A2520991300889DE2 /* Bar */,
+				46F1C47A2520991300889DE2 /* AutoInsetter */,
+				46F1C4CA2520991300889DE2 /* Utility */,
+				46F1C4752520991300889DE2 /* Extensions */,
 				46F1C403252095D400889DE2 /* Info.plist */,
 			);
 			path = Tabman;
@@ -99,6 +233,235 @@
 				46F1C4562520975100889DE2 /* Tabman.xcconfig */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		46F1C4752520991300889DE2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4762520991300889DE2 /* UIViewController+Tabman.swift */,
+				46F1C4772520991300889DE2 /* PageboyNavigationDirection+Tabman.swift */,
+				46F1C4782520991300889DE2 /* UIView+LayoutGuide.swift */,
+				46F1C4792520991300889DE2 /* PageboyViewController+RelativeCurrentPosition.swift */,
+				46F1C4882520991300889DE2 /* UIViewController+ScrollViewDetection.swift */,
+				46F1C4A92520991300889DE2 /* CGRect+Interpolation.swift */,
+				46F1C4AA2520991300889DE2 /* UIColor+Interpolation.swift */,
+				46F1C4AB2520991300889DE2 /* UIView+DefaultTintColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46F1C47A2520991300889DE2 /* AutoInsetter */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4862520991300889DE2 /* AutoInsetter.swift */,
+				46F1C4892520991300889DE2 /* AutoInsetSpec.swift */,
+				46F1C47B2520991300889DE2 /* InsetExecutor */,
+				46F1C47D2520991300889DE2 /* InsetCalculator */,
+				46F1C4832520991300889DE2 /* InsetStore */,
+			);
+			path = AutoInsetter;
+			sourceTree = "<group>";
+		};
+		46F1C47B2520991300889DE2 /* InsetExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C47C2520991300889DE2 /* InsetExecutor.swift */,
+			);
+			path = InsetExecutor;
+			sourceTree = "<group>";
+		};
+		46F1C47D2520991300889DE2 /* InsetCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C47E2520991300889DE2 /* TableViewInsetCalculator.swift */,
+				46F1C47F2520991300889DE2 /* ScrollViewInsetCalculator.swift */,
+				46F1C4802520991300889DE2 /* CollectionViewInsetCalculator.swift */,
+				46F1C4812520991300889DE2 /* InsetCalculator.swift */,
+				46F1C4822520991300889DE2 /* InsetCalculations.swift */,
+			);
+			path = InsetCalculator;
+			sourceTree = "<group>";
+		};
+		46F1C4832520991300889DE2 /* InsetStore */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4842520991300889DE2 /* DefaultInsetStore.swift */,
+				46F1C4852520991300889DE2 /* InsetStore.swift */,
+			);
+			path = InsetStore;
+			sourceTree = "<group>";
+		};
+		46F1C48A2520991300889DE2 /* Bar */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4A72520991300889DE2 /* TMBar.swift */,
+				46F1C49D2520991300889DE2 /* TMBar+Templates.swift */,
+				46F1C48B2520991300889DE2 /* TMAnimation.swift */,
+				46F1C4B62520991300889DE2 /* TMTransition.swift */,
+				46F1C48C2520991300889DE2 /* BarExtensions */,
+				46F1C4922520991300889DE2 /* BarView */,
+				46F1C49A2520991300889DE2 /* BarItem */,
+				46F1C49E2520991300889DE2 /* BarLayout */,
+				46F1C4C82520991300889DE2 /* BarBackgroundView */,
+				46F1C4AC2520991300889DE2 /* BarIndicator */,
+				46F1C4B72520991300889DE2 /* BarButton */,
+				46F1C4C32520991300889DE2 /* Generic */,
+			);
+			path = Bar;
+			sourceTree = "<group>";
+		};
+		46F1C48C2520991300889DE2 /* BarExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C48D2520991300889DE2 /* AutoHidingBar */,
+				46F1C4902520991300889DE2 /* SystemBar */,
+			);
+			path = BarExtensions;
+			sourceTree = "<group>";
+		};
+		46F1C48D2520991300889DE2 /* AutoHidingBar */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C48E2520991300889DE2 /* TMHidingBar+Triggers.swift */,
+				46F1C48F2520991300889DE2 /* TMHidingBar.swift */,
+			);
+			path = AutoHidingBar;
+			sourceTree = "<group>";
+		};
+		46F1C4902520991300889DE2 /* SystemBar */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4912520991300889DE2 /* TMSystemBar.swift */,
+			);
+			path = SystemBar;
+			sourceTree = "<group>";
+		};
+		46F1C4922520991300889DE2 /* BarView */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4932520991300889DE2 /* TMBarView.swift */,
+				46F1C4942520991300889DE2 /* TMBarViewUpdateHandler.swift */,
+				46F1C4952520991300889DE2 /* TMBarViewLayoutGrid.swift */,
+				46F1C4962520991300889DE2 /* TMBarViewFocusRect.swift */,
+				46F1C4972520991300889DE2 /* TMBarViewScrollHandler.swift */,
+				46F1C4982520991300889DE2 /* TMBarViewContentInsetGuides.swift */,
+				46F1C4992520991300889DE2 /* TMBarViewFocusProvider.swift */,
+			);
+			path = BarView;
+			sourceTree = "<group>";
+		};
+		46F1C49A2520991300889DE2 /* BarItem */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C49B2520991300889DE2 /* TMBarItem.swift */,
+				46F1C49C2520991300889DE2 /* UIKit+TMBarItemable.swift */,
+			);
+			path = BarItem;
+			sourceTree = "<group>";
+		};
+		46F1C49E2520991300889DE2 /* BarLayout */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C49F2520991300889DE2 /* Types */,
+				46F1C4A42520991300889DE2 /* TMBarLayout.swift */,
+				46F1C4A52520991300889DE2 /* TMBarLayoutInsetGuides.swift */,
+				46F1C4A62520991300889DE2 /* TMBarLayoutParent.swift */,
+			);
+			path = BarLayout;
+			sourceTree = "<group>";
+		};
+		46F1C49F2520991300889DE2 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4A02520991300889DE2 /* TMHorizontalBarLayout.swift */,
+				46F1C4A12520991300889DE2 /* TMHorizontalBarLayout+Separator.swift */,
+				46F1C4A22520991300889DE2 /* TMBarLayout+None.swift */,
+				46F1C4A32520991300889DE2 /* TMConstrainedHorizontalBarLayout.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		46F1C4AC2520991300889DE2 /* BarIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4AD2520991300889DE2 /* Types */,
+				46F1C4B32520991300889DE2 /* TMBarIndicator.swift */,
+				46F1C4B42520991300889DE2 /* TMBarIndicatorContainer.swift */,
+				46F1C4B52520991300889DE2 /* TMBarIndicatorLayoutHandler.swift */,
+			);
+			path = BarIndicator;
+			sourceTree = "<group>";
+		};
+		46F1C4AD2520991300889DE2 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4AE2520991300889DE2 /* TMDotBarIndicator.swift */,
+				46F1C4AF2520991300889DE2 /* TMChevronBarIndicator.swift */,
+				46F1C4B02520991300889DE2 /* TMBarIndicator+None.swift */,
+				46F1C4B12520991300889DE2 /* TMLineBarIndicator.swift */,
+				46F1C4B22520991300889DE2 /* TMBlockBarIndicator.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		46F1C4B72520991300889DE2 /* BarButton */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4B82520991300889DE2 /* TMBarButton.swift */,
+				46F1C4B92520991300889DE2 /* Types */,
+				46F1C4BD2520991300889DE2 /* TMBarButtonController.swift */,
+				46F1C4BE2520991300889DE2 /* TMBarButtonCollection.swift */,
+				46F1C4BF2520991300889DE2 /* TMBarButtonStateController.swift */,
+				46F1C4C02520991300889DE2 /* Badge */,
+				46F1C4C22520991300889DE2 /* TMBarButtonInteractionController.swift */,
+			);
+			path = BarButton;
+			sourceTree = "<group>";
+		};
+		46F1C4B92520991300889DE2 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4BA2520991300889DE2 /* TMTabItemBarButton.swift */,
+				46F1C4BB2520991300889DE2 /* TMLabelBarButton.swift */,
+				46F1C4BC2520991300889DE2 /* TMBarButton+None.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		46F1C4C02520991300889DE2 /* Badge */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4C12520991300889DE2 /* TMBadgeView.swift */,
+			);
+			path = Badge;
+			sourceTree = "<group>";
+		};
+		46F1C4C32520991300889DE2 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4C42520991300889DE2 /* EdgeFadedView.swift */,
+				46F1C4C52520991300889DE2 /* AnimateableLabel.swift */,
+				46F1C4C62520991300889DE2 /* ViewTitleViewContainer.swift */,
+				46F1C4C72520991300889DE2 /* GestureScrollView.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		46F1C4C82520991300889DE2 /* BarBackgroundView */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4C92520991300889DE2 /* TMBarBackgroundView.swift */,
+			);
+			path = BarBackgroundView;
+			sourceTree = "<group>";
+		};
+		46F1C4CA2520991300889DE2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C4CB2520991300889DE2 /* BarMath.swift */,
+				46F1C4CC2520991300889DE2 /* WeakContainer.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +579,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46F1C44A2520966000889DE2 /* Test.swift in Sources */,
+				46F1C4DF2520991300889DE2 /* TMSystemBar.swift in Sources */,
+				46F1C4E22520991300889DE2 /* TMBarViewLayoutGrid.swift in Sources */,
+				46F1C4FA2520991300889DE2 /* TMBarIndicator.swift in Sources */,
+				46F1C4F82520991300889DE2 /* TMLineBarIndicator.swift in Sources */,
+				46F1C4F62520991300889DE2 /* TMChevronBarIndicator.swift in Sources */,
+				46F1C4D12520991300889DE2 /* InsetExecutor.swift in Sources */,
+				46F1C4D52520991300889DE2 /* InsetCalculator.swift in Sources */,
+				46F1C5062520991300889DE2 /* TMBarButtonInteractionController.swift in Sources */,
+				46F1C4F92520991300889DE2 /* TMBlockBarIndicator.swift in Sources */,
+				46F1C5072520991300889DE2 /* EdgeFadedView.swift in Sources */,
+				46F1C5082520991300889DE2 /* AnimateableLabel.swift in Sources */,
+				46F1C4EC2520991300889DE2 /* TMBarLayout+None.swift in Sources */,
+				46F1C4D22520991300889DE2 /* TableViewInsetCalculator.swift in Sources */,
+				46F1C4D62520991300889DE2 /* InsetCalculations.swift in Sources */,
+				46F1C4CE2520991300889DE2 /* PageboyNavigationDirection+Tabman.swift in Sources */,
+				46F1C4E42520991300889DE2 /* TMBarViewScrollHandler.swift in Sources */,
+				46F1C4FC2520991300889DE2 /* TMBarIndicatorLayoutHandler.swift in Sources */,
+				46F1C4D82520991300889DE2 /* InsetStore.swift in Sources */,
+				46F1C4E02520991300889DE2 /* TMBarView.swift in Sources */,
+				46F1C4DA2520991300889DE2 /* UIViewController+ScrollViewDetection.swift in Sources */,
+				46F1C4EE2520991300889DE2 /* TMBarLayout.swift in Sources */,
+				46F1C4DC2520991300889DE2 /* TMAnimation.swift in Sources */,
+				46F1C4F02520991300889DE2 /* TMBarLayoutParent.swift in Sources */,
+				46F1C4E82520991300889DE2 /* UIKit+TMBarItemable.swift in Sources */,
+				46F1C5032520991300889DE2 /* TMBarButtonCollection.swift in Sources */,
+				46F1C5042520991300889DE2 /* TMBarButtonStateController.swift in Sources */,
+				46F1C4FB2520991300889DE2 /* TMBarIndicatorContainer.swift in Sources */,
+				46F1C50A2520991300889DE2 /* GestureScrollView.swift in Sources */,
+				46F1C4F22520991300889DE2 /* CGRect+Interpolation.swift in Sources */,
+				46F1C4D02520991300889DE2 /* PageboyViewController+RelativeCurrentPosition.swift in Sources */,
+				46F1C4ED2520991300889DE2 /* TMConstrainedHorizontalBarLayout.swift in Sources */,
+				46F1C4E52520991300889DE2 /* TMBarViewContentInsetGuides.swift in Sources */,
+				46F1C50B2520991300889DE2 /* TMBarBackgroundView.swift in Sources */,
+				46F1C4EF2520991300889DE2 /* TMBarLayoutInsetGuides.swift in Sources */,
+				46F1C50C2520991300889DE2 /* BarMath.swift in Sources */,
+				46F1C4E62520991300889DE2 /* TMBarViewFocusProvider.swift in Sources */,
+				46F1C4D32520991300889DE2 /* ScrollViewInsetCalculator.swift in Sources */,
+				46F1C4FE2520991300889DE2 /* TMBarButton.swift in Sources */,
+				46F1C4D42520991300889DE2 /* CollectionViewInsetCalculator.swift in Sources */,
+				46F1C4DD2520991300889DE2 /* TMHidingBar+Triggers.swift in Sources */,
+				46F1C4EA2520991300889DE2 /* TMHorizontalBarLayout.swift in Sources */,
+				46F1C4F42520991300889DE2 /* UIView+DefaultTintColor.swift in Sources */,
+				46F1C5012520991300889DE2 /* TMBarButton+None.swift in Sources */,
+				46F1C4F52520991300889DE2 /* TMDotBarIndicator.swift in Sources */,
+				46F1C4EB2520991300889DE2 /* TMHorizontalBarLayout+Separator.swift in Sources */,
+				46F1C4DE2520991300889DE2 /* TMHidingBar.swift in Sources */,
+				46F1C4D92520991300889DE2 /* AutoInsetter.swift in Sources */,
+				46F1C50D2520991300889DE2 /* WeakContainer.swift in Sources */,
+				46F1C4E12520991300889DE2 /* TMBarViewUpdateHandler.swift in Sources */,
+				46F1C4CF2520991300889DE2 /* UIView+LayoutGuide.swift in Sources */,
+				46F1C4D72520991300889DE2 /* DefaultInsetStore.swift in Sources */,
+				46F1C5052520991300889DE2 /* TMBadgeView.swift in Sources */,
+				46F1C4F72520991300889DE2 /* TMBarIndicator+None.swift in Sources */,
+				46F1C5022520991300889DE2 /* TMBarButtonController.swift in Sources */,
+				46F1C4F12520991300889DE2 /* TMBar.swift in Sources */,
+				46F1C4E72520991300889DE2 /* TMBarItem.swift in Sources */,
+				46F1C4FF2520991300889DE2 /* TMTabItemBarButton.swift in Sources */,
+				46F1C4E92520991300889DE2 /* TMBar+Templates.swift in Sources */,
+				46F1C5002520991300889DE2 /* TMLabelBarButton.swift in Sources */,
+				46F1C5092520991300889DE2 /* ViewTitleViewContainer.swift in Sources */,
+				46F1C4FD2520991300889DE2 /* TMTransition.swift in Sources */,
+				46F1C4E32520991300889DE2 /* TMBarViewFocusRect.swift in Sources */,
+				46F1C4F32520991300889DE2 /* UIColor+Interpolation.swift in Sources */,
+				46F1C4DB2520991300889DE2 /* AutoInsetSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

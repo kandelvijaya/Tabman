@@ -2,10 +2,11 @@
 //  Tabman.h
 //  Tabman
 //
-//  Created by Merrick Sapsford on 27/09/2020.
+//  Created by Merrick Sapsford on 17/02/2017.
+//  Copyright © 2019 UI At Six. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 //! Project version number for Tabman.
 FOUNDATION_EXPORT double TabmanVersionNumber;
