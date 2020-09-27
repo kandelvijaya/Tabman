@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46F1C428252095F500889DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C427252095F500889DE2 /* AppDelegate.swift */; };
-		46F1C42A252095F500889DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C429252095F500889DE2 /* SceneDelegate.swift */; };
 		46F1C42C252095F500889DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F1C42B252095F500889DE2 /* ViewController.swift */; };
 		46F1C42F252095F500889DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F1C42D252095F500889DE2 /* Main.storyboard */; };
 		46F1C431252095F600889DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F1C430252095F600889DE2 /* Assets.xcassets */; };
@@ -34,13 +33,13 @@
 /* Begin PBXFileReference section */
 		46F1C424252095F500889DE2 /* Example iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F1C427252095F500889DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46F1C429252095F500889DE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		46F1C42B252095F500889DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46F1C42E252095F500889DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46F1C430252095F600889DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46F1C433252095F600889DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F1C435252095F600889DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46F1C4402520962600889DE2 /* Tabman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Tabman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F1C464252097F000889DE2 /* Tabman.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Tabman.xcconfig; path = ../Tabman.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				46F1C426252095F500889DE2 /* iOS */,
+				46F1C463252097E500889DE2 /* Config */,
 				46F1C425252095F500889DE2 /* Products */,
 				46F1C43F2520962600889DE2 /* Frameworks */,
 			);
@@ -76,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				46F1C427252095F500889DE2 /* AppDelegate.swift */,
-				46F1C429252095F500889DE2 /* SceneDelegate.swift */,
 				46F1C42B252095F500889DE2 /* ViewController.swift */,
 				46F1C42D252095F500889DE2 /* Main.storyboard */,
 				46F1C430252095F600889DE2 /* Assets.xcassets */,
@@ -92,6 +91,14 @@
 				46F1C4402520962600889DE2 /* Tabman.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46F1C463252097E500889DE2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				46F1C464252097F000889DE2 /* Tabman.xcconfig */,
+			);
+			name = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +174,6 @@
 			files = (
 				46F1C42C252095F500889DE2 /* ViewController.swift in Sources */,
 				46F1C428252095F500889DE2 /* AppDelegate.swift in Sources */,
-				46F1C42A252095F500889DE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +201,7 @@
 /* Begin XCBuildConfiguration section */
 		46F1C436252095F600889DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F1C464252097F000889DE2 /* Tabman.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -244,18 +251,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(TABMAN_IOS_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		46F1C437252095F600889DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F1C464252097F000889DE2 /* Tabman.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -299,12 +308,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(TABMAN_IOS_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -320,9 +330,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "$(TABMAN_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uias.Tabman.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -338,9 +348,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = "$(TABMAN_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.uias.Tabman.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
